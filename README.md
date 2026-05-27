@@ -30,17 +30,6 @@ DUNDOO is an AI-driven hyperlocal commerce platform that enables users to discov
 - **Other Tools:** REST APIs  
 
 ---
-
-## 🧠 Architecture
-(Add system architecture diagram here)
-
----
-
-## 📸 Screenshots
-(Add screenshots here)
-
----
-
 ## 🚀 How to Run the Project
 
 ```bash
