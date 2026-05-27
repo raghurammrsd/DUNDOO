@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}User Login{% endblock %}
+
+{% block content %}
+<div class="auth-page">
+  <div class="auth-card">
+    <h1 class="auth-title">User Login</h1>
+    <p class="auth-subtitle">
+      Login with your username and password to search products near you.
+    </p>
+
+    <form method="post" class="form-grid">
+      <div class="form-group">
+        <label class="form-label" for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          class="form-input"
+          placeholder="Your username"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-input"
+          placeholder="Your password"
+          required
+        >
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="margin-top: 4px;">
+        Login
+      </button>
+    </form>
+
+    <div class="auth-footer">
+      <span>New user?</span>
+      <a href="{{ url_for('user.register') }}">Create an account</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

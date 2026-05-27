@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Verify OTP{% endblock %}
+
+{% block content %}
+<div class="form-page">
+  <div class="form-card-auth">
+    <p class="form-eyebrow">OTP verification</p>
+    <h1 class="form-title-main">Check your email</h1>
+    <p class="form-subtitle">
+      We sent a 6-digit code to <strong>{{ email }}</strong>.
+      Enter it below to continue.
+    </p>
+
+    <form method="post" class="form-grid">
+      <div class="form-group">
+        <label for="otp" class="form-label">6-digit code</label>
+        <input
+          type="text"
+          id="otp"
+          name="otp"
+          maxlength="6"
+          class="form-input"
+          placeholder="123456"
+          required
+        >
+      </div>
+
+      <button type="submit" class="btn btn-primary form-primary-btn">
+        Verify & Continue
+      </button>
+
+      <div class="form-footer-text">
+        Logged in as: {{ role|capitalize }} ·
+        <a href="{{ url_for('shop.login') }}">Use different account</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

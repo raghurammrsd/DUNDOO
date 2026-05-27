@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6 col-lg-5">
+    <div class="card shadow-sm rounded-4">
+      <div class="card-body p-4">
+        <h3 class="card-title mb-3 text-center">User Registration</h3>
+        <p class="text-muted small mb-3 text-center">
+          We'll send a 6-digit OTP to verify your email.
+        </p>
+        <form method="POST">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input name="username" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input name="email" type="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <input name="phone" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input name="password" type="password" class="form-control" required>
+          </div>
+          <button class="btn btn-primary w-100 rounded-3">Send OTP</button>
+        </form>
+        <p class="text-center mt-3 small">
+          Already registered? <a href="{{ url_for('user.login') }}">Login</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
