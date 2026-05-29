@@ -1,23 +1,23 @@
-# 🚀 DUNDOO – AI-Powered Local Commerce Platform
+# DUNDOO – AI-Powered Local Commerce Platform
 
-## 📌 Problem Statement
+## Problem Statement
 Local shopkeepers lack digital visibility, making product discovery difficult for customers. Existing platforms favor large sellers and lack hyperlocal intelligence.
 
 ---
 
-## 💡 Solution
+## Solution
 DUNDOO is an AI-driven hyperlocal commerce platform that enables users to discover nearby products using intelligent features like image search, voice assistant, and multilingual support.
 
 ---
 
-## ✨ Features
-- 🔍 Image-based product search using Computer Vision  
-- 🎤 Voice assistant for hands-free interaction  
-- 🌐 Multilingual support for regional accessibility  
-- 🗺️ Map-based shop discovery  
-- 💳 Online payment integration (Razorpay)  
-- 🛍️ Real-time product search and recommendations  
-- 📊 Shop dashboard and analytics  
+## Features
+- Image-based product search using Computer Vision  
+- Voice assistant for hands-free interaction  
+- Multilingual support for regional accessibility  
+- Map-based shop discovery  
+- Online payment integration (Razorpay)  
+- Real-time product search and recommendations  
+- Shop dashboard and analytics  
 
 ---
 
@@ -49,12 +49,12 @@ pip install -r requirements.txt
 
 # Run the application
 python run.py
-🔮 Future Improvements
-🤖 AI-based recommendation system
-💬 Chatbot for customer interaction
-📈 Personalized product suggestions
-☁️ Cloud deployment (AWS)
-👨‍💻 Author
+Future Improvements
+AI-based recommendation system
+Chatbot for customer interaction
+Personalized product suggestions
+Cloud deployment (AWS)
+Author
 
 Mohan Sri Raghuram
 
